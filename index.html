@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <meta name="description" content="43 verified solar installers across 8 cities in Pakistan — Karachi, Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Quetta. Real phone numbers from company websites and the PPIB/AEDB lists. Free directory." />
+    <link rel="canonical" href="https://solarinstallerspakistan.com/" />
+    <meta property="og:title" content="Solar Installers Pakistan — Verified Directory" />
+    <meta property="og:description" content="43 verified solar installers across 8 cities in Pakistan. Real phone numbers, published prices, and honest certification notes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solarinstallerspakistan.com/" />
+
+    <title>Solar Installers Pakistan — Verified Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Solar Installers <span class="sun">Pakistan</span></a>
+        <div class="navlinks"><a href="index.html" class="active">Directory</a><a href="#cities">Cities</a><a href="#brands">Brands</a><a href="add-listing.html">Add a listing</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a></div>
+      </nav>
+      <!-- HERO -->
+      <header class="hero">
+        <div class="hero-grid">
+          <div>
+            <h1>Pakistan&rsquo;s verified <span class="sun">solar installers</span>, city by city</h1>
+            <p class="lede">43 real solar companies across 8 cities — every phone number below was taken from the company&rsquo;s own website, its official listing, or the PPIB/AEDB certified-installer list. No invented listings, no guessed numbers.</p>
+            <p class="urdu">Apne sheher ka verified installer dhundein — call ya WhatsApp par seedha rabta karein.</p>
+            <div class="stats">
+              <div class="stat"><b>43</b><span>verified installers</span></div>
+              <div class="stat"><b>8</b><span>cities covered</span></div>
+              <div class="stat"><b>3</b><span>publish system prices</span></div>
+              <div class="stat"><b>9 Nov 2026</b><span>data checked</span></div>
+            </div>
+          </div>
+          <figure class="hero-photo" style="margin:0">
+            <img src="assets/hero-rooftop.jpg" alt="Workers installing rows of solar panels on a large rooftop" />
+            <figcaption>Rooftop solar installation. Photo: Saatvik Green Energy (saatvikgroup.com).</figcaption>
+          </figure>
+        </div>
+      </header>
+
+      <!-- FINDER -->
+      <div class="finder" id="directory">
+        <div class="searchrow">
+          <input type="search" id="q" placeholder="Search company, area or brand — e.g. &lsquo;Johar Town&rsquo;, &lsquo;LONGi&rsquo;, &lsquo;net metering&rsquo;&hellip;" aria-label="Search installers" />
+        </div>
+        <div class="cityrow" id="cities" role="group" aria-label="Filter by city"></div>
+        <div class="tagrow" id="tags" role="group" aria-label="Filter by service">
+          <button class="chipbtn tagbtn" data-tag="net" aria-pressed="false">Net metering</button>
+          <button class="chipbtn tagbtn" data-tag="hybrid" aria-pressed="false">Hybrid / battery</button>
+          <button class="chipbtn tagbtn" data-tag="commercial" aria-pressed="false">Commercial &amp; industrial</button>
+          <button class="chipbtn tagbtn" data-tag="price" aria-pressed="false">Publishes prices</button>
+          <button class="chipbtn tagbtn" data-tag="cert" aria-pressed="false">On a certified list</button>
+          <button class="chipbtn tagbtn" data-tag="ongrid" aria-pressed="false" title="Installers that handle net metering (grid-tied systems)">On-grid</button>
+        </div>
+        <div class="tagrow" id="brands" role="group" aria-label="Filter by brand">
+          <span class="rowlabel">Brand:</span>
+          <button class="chipbtn tagbtn brandbtn" data-brand="longi" aria-pressed="false">LONGi</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="jinko" aria-pressed="false">Jinko</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="canadian" aria-pressed="false">Canadian Solar</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="ja solar" aria-pressed="false">JA Solar</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="huawei" aria-pressed="false">Huawei</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="growatt" aria-pressed="false">Growatt</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="goodwe" aria-pressed="false">GoodWe</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="solis" aria-pressed="false">Solis</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="sungrow" aria-pressed="false">Sungrow</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="foxess" aria-pressed="false">FoxESS</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="inverex" aria-pressed="false">Inverex</button>
+          <button class="chipbtn tagbtn brandbtn" data-brand="pylontech" aria-pressed="false">Pylontech</button>
+        </div>
+        <div class="tagrow" id="certs" role="group" aria-label="Filter by certification status">
+          <span class="rowlabel">Certification:</span>
+          <button class="chipbtn tagbtn certbtn" data-cert="ok" aria-pressed="false">Certified (listed)</button>
+          <button class="chipbtn tagbtn certbtn" data-cert="stale" aria-pressed="false">Stale — re-check</button>
+          <button class="chipbtn tagbtn certbtn" data-cert="claim" aria-pressed="false">Claim only</button>
+          <button class="chipbtn tagbtn certbtn" data-cert="none" aria-pressed="false">Not published</button>
+        </div>
+        <div class="tagrow" id="sizes" role="group" aria-label="Filter by system size">
+          <span class="rowlabel">System size (published sizes only):</span>
+          <button class="chipbtn tagbtn sizebtn" data-size="3" aria-pressed="false">3 kW</button>
+          <button class="chipbtn tagbtn sizebtn" data-size="5" aria-pressed="false">5 kW</button>
+          <button class="chipbtn tagbtn sizebtn" data-size="10" aria-pressed="false">10 kW</button>
+          <button class="chipbtn tagbtn sizebtn" data-size="15" aria-pressed="false">15 kW</button>
+          <button class="chipbtn tagbtn sizebtn" data-size="20" aria-pressed="false">20 kW</button>
+        </div>
+        <p class="resultline" id="resultline"></p>
+        <p class="note">Own a solar company? <a href="add-listing.html">Add your listing — it's free</a>. Every listing is verified before it is published.</p>
+        <p class="note">Updated 10 Nov 2026 — brand, certification and system-size filters, price-per-kW on published prices, and 8 city pages added. Listing data itself was checked 9 Nov 2026.</p>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <p><strong>No installer matches that search.</strong><br />Try a different city, or clear the filters above.</p>
+      </div>
+
+      <!-- CITIES -->
+      <section class="block" id="cities">
+        <h2>Browse installers by city</h2>
+        <p class="sub">One page per city, with that city's installers, local prices where published, and the 5 kW / 10 kW cost guide for the city.</p>
+        <div class="citylinks">
+          <a href="cities/karachi.html"><b>Karachi</b><span>8 installers · K-Electric</span></a>
+          <a href="cities/lahore.html"><b>Lahore</b><span>8 installers · LESCO</span></a>
+          <a href="cities/islamabad.html"><b>Islamabad</b><span>8 installers · IESCO</span></a>
+          <a href="cities/rawalpindi.html"><b>Rawalpindi</b><span>4 installers · IESCO</span></a>
+          <a href="cities/faisalabad.html"><b>Faisalabad</b><span>4 installers · FESCO</span></a>
+          <a href="cities/multan.html"><b>Multan</b><span>4 installers · MEPCO</span></a>
+          <a href="cities/peshawar.html"><b>Peshawar</b><span>4 installers · PESCO</span></a>
+          <a href="cities/quetta.html"><b>Quetta</b><span>3 installers · QESCO</span></a>
+        </div>
+      </section>
+
+      <!-- PRICES -->
+      <section class="block" id="prices">
+        <h2>What a system actually costs</h2>
+        <p class="sub">Most Pakistani installers quote only after a site survey — only three companies in this directory publish system prices. Their published figures, plus independent market-guide ranges, are below. All prices are indicative and vary by panel brand, inverter, battery and structure.</p>
+        <div class="panel">
+          <h3 style="font-size:1.05rem;margin-bottom:4px">On-grid system prices published by installers (PKR)</h3>
+          <div class="chart" id="chart"></div>
+          <div class="axis"><span>Rs 0</span><span>Rs 4 lakh</span><span>Rs 8 lakh</span><span>Rs 12 lakh</span><span>Rs 16 lakh</span></div>
+          <div class="legend">
+            <span><i style="background:var(--green-bright)"></i>Exact published price</span>
+            <span><i style="background:var(--amber)"></i>Published range</span>
+            <span><i style="background:var(--ink-soft);opacity:.55"></i>Market guide (not an installer quote)</span>
+          </div>
+          <table class="prices">
+            <thead><tr><th>Company (source)</th><th>System</th><th>Published price</th></tr></thead>
+            <tbody>
+              <tr><td>Alpha Solar, Lahore — own site, 14 Oct 2026, on-grid incl. net metering</td><td class="num">5 kW</td><td class="num">Rs 744,000</td></tr>
+              <tr><td>Alpha Solar</td><td class="num">10 kW</td><td class="num">Rs 996,000</td></tr>
+              <tr><td>Alpha Solar</td><td class="num">15 kW</td><td class="num">Rs 1,335,000</td></tr>
+              <tr><td>Alpha Solar</td><td class="num">20 kW</td><td class="num">Rs 1,700,000</td></tr>
+              <tr><td>Alpha Solar</td><td class="num">25 kW / 30 kW</td><td class="num">Rs 2,045,000 / Rs 2,405,000</td></tr>
+              <tr><td>Beyond Green Solar, Karachi — own site</td><td class="num">3 kW on-grid</td><td class="num">Rs 380,000 – 420,000</td></tr>
+              <tr><td>Beyond Green Solar</td><td class="num">5 kW on-grid / hybrid</td><td class="num">Rs 620,000 – 700,000 / Rs 850,000 – 1,100,000</td></tr>
+              <tr><td>Beyond Green Solar</td><td class="num">7 kW+ on-grid / hybrid</td><td class="num">Rs 950,000 – 1,300,000+ / Rs 1,400,000 – 2,400,000+</td></tr>
+              <tr><td>Solar Citizen, Lahore — own site guide, indicative</td><td class="num">5 kW on-grid</td><td class="num">~Rs 550,000 – 800,000</td></tr>
+              <tr><td>Solar Citizen</td><td class="num">10 kW</td><td class="num">Rs 1,050,000 – 1,500,000</td></tr>
+            </tbody>
+          </table>
+          <p class="note"><strong>Read with care:</strong> Alpha Solar&rsquo;s own page also says &ldquo;5 kW from Rs 734,000&rdquo; in its intro text while its price cards say Rs 744,000 — confirm the final figure in writing before paying. Beyond Green&rsquo;s Lahore page publishes different figures from its Karachi page, so always ask for your own city&rsquo;s quote. Market guides (not installer quotes) put a 5 kW hybrid at roughly Rs 1,200,000–1,450,000 and a 10 kW hybrid at Rs 1,900,000–2,300,000 (GharHub, 2026); lithium batteries add roughly Rs 45,000–70,000 per kWh. Tier-1 N-type panels were around Rs 36–43 per watt in Sep 2026 market guides.</p>
+        </div>
+      </section>
+
+      <!-- NET BILLING WARNING -->
+      <section class="block">
+        <div class="warn">
+          <h3>Net metering has changed — read before you sign</h3>
+          <p>Under NEPRA&rsquo;s Prosumer Regulations 2026, <strong>net billing replaced net metering for new applicants</strong>: exported units are credited at roughly <strong>Rs 11/unit instead of ~Rs 26/unit</strong> before, and contracts run 5 years instead of 7 (per ProChuno&rsquo;s summary of Tribune / Arab News reporting, Feb 2026). An installer promising you the old net-metering rates is quoting terms that no longer apply to new connections — ask them to show you the current DISCO rules for your city.</p>
+        </div>
+      </section>
+
+      <!-- BRANDS -->
+      <section class="block" id="brands">
+        <h2>Brands sold in Pakistan</h2>
+        <p class="sub">The brands the installers in this directory actually list on their own pages. If a company won&rsquo;t name its panel and inverter brands in the written quote, that is a red flag.</p>
+        <div class="brands">
+          <div class="panel">
+            <h3>Solar panels</h3>
+            <div class="brandchips"><span>LONGi</span><span>Jinko</span><span>Canadian Solar</span><span>JA Solar</span><span>Trina Solar</span><span>Aiko</span><span>TCL</span><span>Astronergy</span><span>Hyundai Solar</span><span>ZNShine</span><span>Yingli</span><span>Risen</span><span>Powerstone</span><span>Inverex (own brand)</span></div>
+          </div>
+          <div class="panel">
+            <h3>Inverters</h3>
+            <div class="brandchips"><span>Huawei</span><span>Growatt</span><span>GoodWe</span><span>Solis</span><span>Sungrow</span><span>FoxESS</span><span>Sofar</span><span>Inverex Nitrox</span><span>SMA</span><span>SolarMax</span><span>MaxPower</span><span>Itel</span><span>Voltrra</span></div>
+          </div>
+          <div class="panel">
+            <h3>Batteries (LiFePO4)</h3>
+            <div class="brandchips"><span>Pylontech</span><span>Dyness</span><span>Soluna</span><span>Narada</span><span>Pytes</span><span>BYD</span><span>Sofar</span><span>Inverex lithium</span><span>Royal lithium</span></div>
+          </div>
+        </div>
+        <p class="note">Sources: Alpha Solar and Solar Works Pakistan brand pages, Solar Citizen Lahore guide — see footer.</p>
+      </section>
+
+
+      <!-- BROWSE BY BRAND -->
+      <section class="block" id="browse-brands">
+        <h2>Browse by brand</h2>
+        <p class="sub">One page per brand the installers in this directory actually list — with per-watt prices where published and the installers who carry it, city by city.</p>
+        <div class="brands">
+          <div class="panel">
+            <h3>Solar panels</h3>
+            <div class="citylinks"><a href="brands/longi.html"><b>LONGi</b><span>5 installers</span></a><a href="brands/jinko.html"><b>Jinko</b><span>5 installers</span></a><a href="brands/canadian-solar.html"><b>Canadian Solar</b><span>5 installers</span></a><a href="brands/ja-solar.html"><b>JA Solar</b><span>4 installers</span></a><a href="brands/trina-solar.html"><b>Trina Solar</b><span>2 installers</span></a><a href="brands/aiko.html"><b>Aiko</b><span>2 installers</span></a><a href="brands/tcl.html"><b>TCL</b><span>1 installer</span></a><a href="brands/astronergy.html"><b>Astronergy</b><span>2 installers</span></a><a href="brands/jolywood.html"><b>Jolywood</b><span>1 installer</span></a><a href="brands/risen.html"><b>Risen</b><span>1 installer</span></a><a href="brands/tongwei.html"><b>Tongwei</b><span>1 installer</span></a><a href="brands/mustang.html"><b>Mustang</b><span>1 installer</span></a><a href="brands/hyundai-solar.html"><b>Hyundai Solar</b><span>1 installer</span></a><a href="brands/znshine.html"><b>ZNShine</b><span>1 installer</span></a><a href="brands/yingli.html"><b>Yingli</b><span>1 installer</span></a><a href="brands/powerstone.html"><b>Powerstone</b><span>1 installer</span></a></div>
+          </div>
+          <div class="panel">
+            <h3>Inverters</h3>
+            <div class="citylinks"><a href="brands/huawei.html"><b>Huawei</b><span>4 installers</span></a><a href="brands/growatt.html"><b>Growatt</b><span>2 installers</span></a><a href="brands/goodwe.html"><b>GoodWe</b><span>2 installers</span></a><a href="brands/solis.html"><b>Solis</b><span>2 installers</span></a><a href="brands/sungrow.html"><b>Sungrow</b><span>2 installers</span></a><a href="brands/foxess.html"><b>FoxESS</b><span>1 installer</span></a><a href="brands/sofar.html"><b>Sofar</b><span>1 installer</span></a><a href="brands/solarmax.html"><b>SolarMax</b><span>1 installer</span></a><a href="brands/maxpower.html"><b>MaxPower</b><span>1 installer</span></a><a href="brands/itel.html"><b>Itel</b><span>1 installer</span></a><a href="brands/sma.html"><b>SMA</b><span>1 installer</span></a><a href="brands/voltrra.html"><b>Voltrra</b><span>1 installer</span></a><a href="brands/royal-nexsun.html"><b>Royal Nexsun</b><span>1 installer</span></a><a href="brands/hyvion.html"><b>Hyvion</b><span>1 installer</span></a></div>
+          </div>
+          <div class="panel">
+            <h3>Batteries (LiFePO4)</h3>
+            <div class="citylinks"><a href="brands/pylontech.html"><b>Pylontech</b><span>4 installers</span></a><a href="brands/dyness.html"><b>Dyness</b><span>2 installers</span></a><a href="brands/soluna.html"><b>Soluna</b><span>2 installers</span></a><a href="brands/pytes.html"><b>Pytes</b><span>1 installer</span></a><a href="brands/byd.html"><b>BYD</b><span>1 installer</span></a><a href="brands/narada.html"><b>Narada</b><span>1 installer</span></a></div>
+          </div>
+          <div class="panel">
+            <h3>Panels, inverters & batteries</h3>
+            <div class="citylinks"><a href="brands/inverex.html"><b>Inverex</b><span>4 installers</span></a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEFORE YOU SIGN -->
+      <section class="block" id="guide">
+        <h2>Before you sign anything</h2>
+        <p class="sub">Four checks that come straight out of how this directory&rsquo;s data was verified — they cost nothing and filter out most bad installs.</p>
+        <div class="steps">
+          <div>
+            <img src="assets/installer.jpg" alt="Installers fitting a solar panel onto a rooftop mounting frame" />
+            <p class="note">Photo: PeopleLake Asia (peoplelake.asia).</p>
+          </div>
+          <ol class="checklist">
+            <li><span class="n">1</span><span><strong>Verify the certificate yourself.</strong> Certification below is shown exactly as the sources state it — some entries come from the PPIB list of Oct 2024 whose validity dates have passed, and some from a transcription of the 29 Oct 2026 list. A lapsed date doesn&rsquo;t prove a company lost certification (firms renew), but always re-check the current list at <a href="https://www.ppib.gov.pk" target="_blank" rel="noopener">ppib.gov.pk</a> before paying an advance.</span></li>
+            <li><span class="n">2</span><span><strong>Get the quote in writing, with brands named.</strong> Only 3 of these 43 companies publish prices. Everyone else quotes after a survey — insist the written quote names the panel brand and wattage, inverter brand, battery chemistry and structure type, so you can compare like with like.</span></li>
+            <li><span class="n">3</span><span><strong>Ask who files the net-billing paperwork.</strong> Under the 2026 prosumer rules the export rate and contract length changed. Companies marked &ldquo;Net metering&rdquo; above handle DISCO paperwork — confirm they will file under the new net-billing terms for your city (K-Electric, LESCO, IESCO, MEPCO, PESCO, QESCO).</span></li>
+            <li><span class="n">4</span><span><strong>Call the number on the company&rsquo;s own site.</strong> Every phone here was copied from the company&rsquo;s own page or an official list on 9 Nov 2026. If a number has changed, the company&rsquo;s website (linked on each card) is the safest place to get the new one — not a random blog list.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- COVERAGE NOTE -->
+      <section class="block">
+        <div class="panel">
+          <h3 style="margin-bottom:6px">An honest note on coverage</h3>
+          <p style="margin:0" class="note"><strong>Quetta has only 3 listings</strong> because only 3 Quetta installers could be verified against their own page or an official list — the list was not padded with unverified names. LocalePak&rsquo;s entire solar category for Pakistan holds just 9 listings, which is why most entries here come from company websites and the PPIB/AEDB lists instead. Companies with offices in several cities are listed once, under their head-office city, with their other offices noted on the card. &ldquo;Not published&rdquo; on a card means the field was searched for and not found in a public source — it was never guessed.</p>
+        </div>
+      </section>
+
+      <footer>
+        <nav class="footnav" aria-label="Footer">
+          <a href="index.html">Directory</a>
+          <a href="#cities">Cities</a>
+          <a href="#brands">Brands</a>
+          <a href="add-listing.html">Add a listing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy-policy.html">Privacy policy</a>
+        </nav>
+        <h3>Sources (all read 9 Nov 2026)</h3>
+        <ul>
+          <li><a href="https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf" target="_blank" rel="noopener">PPIB certified installer list C-3 (Oct 2024)</a></li>
+          <li><a href="https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-2%20(24-10-2024).pdf" target="_blank" rel="noopener">PPIB certified installer list C-2 (Oct 2024)</a></li>
+          <li><a href="https://prochuno.com/solar-installers-karachi.html" target="_blank" rel="noopener">ProChuno — PPIB list transcription, Karachi (29 Oct 2026)</a></li>
+          <li><a href="https://prochuno.com/solar-installers-lahore.html" target="_blank" rel="noopener">ProChuno — PPIB list transcription, Lahore (29 Oct 2026)</a></li>
+          <li><a href="https://www.localepak.com/category/solar-energy/" target="_blank" rel="noopener">LocalePak solar category</a></li>
+          <li><a href="http://alphasolar.com.pk/solar-on-grid-system/" target="_blank" rel="noopener">Alpha Solar — prices &amp; brands</a></li>
+          <li><a href="https://beyondgreensolar.com/blogs/solar-system-in-karachi/" target="_blank" rel="noopener">Beyond Green Solar — Karachi prices</a></li>
+          <li><a href="https://www.solarcitizen.com.pk/best-solar-companies-lahore/" target="_blank" rel="noopener">Solar Citizen — Lahore guide &amp; prices</a></li>
+          <li><a href="https://reonenergy.com/contact-us/" target="_blank" rel="noopener">Reon Energy — contact</a></li>
+          <li><a href="https://ajked.gok.pk/vendor-installer-list-2/" target="_blank" rel="noopener">AJKED vendor/installer list (SkyElectric AEDB cert.)</a></li>
+          <li><a href="https://solarworks.pk/" target="_blank" rel="noopener">Solar Works Pakistan</a></li>
+          <li><a href="https://royalsolar.pk/solar-financing/" target="_blank" rel="noopener">Royal Solar Energy</a></li>
+          <li><a href="https://www.kies.com.pk/" target="_blank" rel="noopener">KIES Quetta</a></li>
+          <li><a href="https://gharhub.com/solar-price-in-pakistan-2026-system-cost-with-battery-prices-of-houses" target="_blank" rel="noopener">GharHub — 2026 system price guide</a></li>
+          <li><a href="https://pakistansolartraders.com/solar-system-prices-in-pakistan/" target="_blank" rel="noopener">Pakistan Solar Traders — price guide</a></li>
+        </ul>
+        <p>Cards link to the company&rsquo;s own website or the official list used as the source, wherever a public link exists. Certification marked &ldquo;via ProChuno&rdquo; is that site&rsquo;s transcription of PPIB lists dated 29 Oct 2026 and could not be cross-checked against a live PPIB PDF — re-check at ppib.gov.pk. Prices are as published by the companies named, on the dates shown; they change without notice.</p>
+      </footer>
+    </div>
+
+    <script>
+    var NP = null; // not published
+    var INSTALLERS = [
+      /* ---------------- KARACHI ---------------- */
+      {name:"Inverex Solar Energy (Inverex Power Solution)", city:"Karachi",
+       addr:"1st Floor Mubarak Manzil, Aga Khan III Rd, Regal Saddar, Karachi · nationwide dealer network",
+       phones:[{d:"UAN 021-111-209-988", t:"+9221111209988"}], wa:NP,
+       web:"https://www.aptinverex.com", webLabel:"aptinverex.com",
+       brands:"Own-brand panels (Jolywood, Risen, Tongwei), Inverex Nitrox inverters, Inverex / Pylontech lithium batteries, Mustang 720W bifacial",
+       services:["Residential","Commercial","Agriculture","Hybrid / battery"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/24/003/C-3 — in the Oct 2024 PPIB list with validity shown to 06-12-2024. That date has passed; re-check the current list before relying on it."},
+       src:"https://www.aptinverex.com"},
+      {name:"Beyond Green Solar", city:"Karachi", sizes:[3,5], ppk:"Works out to roughly Rs 124,000–140,000 per kW on-grid (3–5 kW) and Rs 170,000–220,000 per kW hybrid (5 kW) — computed from the published ranges.",
+       addr:"7/146 St 9, Bihar Muslim Society Block 3, Karachi · also Lahore: 307 Block J1 Phase 2 Johar Town (0321-4512630)",
+       phones:[{d:"UAN 0300-0341934", t:"+923000341934"},{d:"021-34541934", t:"+922134541934"}], wa:"923012319157",
+       web:"https://beyondgreensolar.com/", webLabel:"beyondgreensolar.com",
+       brands:"JA Solar, Jinko Tiger Neo N-Type, LONGi (Tier-1 panels)",
+       services:["Residential","Commercial","Hybrid / battery","Off-grid","Net metering","Maintenance"],
+       price:"Karachi, own site: 3 kW on-grid Rs 380,000–420,000 · 5 kW on-grid Rs 620,000–700,000 · 5 kW hybrid Rs 850,000–1,100,000",
+       cert:{k:"ok", t:"PPIB C-1 · CR/25/049/C-1/RN-1 (via ProChuno transcription of the PPIB list dated 29 Oct 2026). Own site also calls itself AEDB pre-qualified / NEPRA-compliant and K-Electric net-metering approved."},
+       src:"https://beyondgreensolar.com/"},
+      {name:"Nizam Energy (Pvt) Ltd", city:"Karachi",
+       addr:"G-30/4 Chartered Accountants Ave, Clifton Block 8, Karachi · offices in Lahore (0300-0220337) & Islamabad (0301-8244905)",
+       phones:[{d:"0300-2024519", t:"+923002024519"},{d:"021-35360583", t:"+922135360583"}], wa:NP,
+       web:"https://nizamenergy.com", webLabel:"nizamenergy.com",
+       brands:"Astronergy distributor; other panel brands not named on the pages seen",
+       services:["Residential","Commercial","Industrial","Net metering","Financing"],
+       price:NP, cert:NP,
+       src:"https://nizamenergy.com"},
+      {name:"Reon Energy Ltd", city:"Karachi",
+       addr:"HQ 3rd Floor Dawood Center, M.T. Khan Rd, Karachi · Lahore +92 42 3575 1287-88 · Islamabad +92 51 848 2558-59",
+       phones:[{d:"UAN (021) 111-736-611", t:"+9221111736611"},{d:"+92 21 3563 2200-09", t:"+922135632200"}], wa:NP,
+       web:"https://reonenergy.com/contact-us/", webLabel:"reonenergy.com",
+       brands:NP,
+       services:["Commercial","Industrial"],
+       price:NP, cert:NP,
+       src:"https://reonenergy.com/contact-us/"},
+      {name:"Solar Citizen (Modular Energy SMC-Pvt Ltd)", city:"Karachi", sizes:[3,5,10,15,20], ppk:"Works out to roughly Rs 105,000–160,000 per kW — computed from the indicative ranges above.",
+       addr:"HQ Suite 212-213 Sea Breeze Plaza, Shahrah-e-Faisal, Karachi · Lahore rep office: 3rd Floor 92-A Commercial Broadway, Phase 8 DHA",
+       phones:[{d:"+92 317-6527111", t:"+923176527111"}], wa:"923162285956",
+       web:"https://www.solarcitizen.com.pk/contact/", webLabel:"solarcitizen.com.pk",
+       brands:"Jinko, LONGi, JA Solar, Canadian Solar, Trina (Tier-1 N-type TOPCon)",
+       services:["Residential","Commercial","Industrial","Hybrid / battery","Net metering","Maintenance"],
+       price:"Indicative, own site (Lahore guide): 5 kW on-grid ~Rs 550,000–800,000 · 10 kW Rs 1,050,000–1,500,000 — final quote after survey",
+       cert:{k:"ok", t:"AEDB C-2 certified (company's own site); PPIB C-2 CR/23/001/C-2."},
+       src:"https://www.solarcitizen.com.pk/contact/"},
+      {name:"ESA Energy SMC (Pvt) Ltd", city:"Karachi",
+       addr:"Office 120 Gate 02 BS Market, New Sabzi Mandi, M9 Highway, Karachi · also serves Islamabad & Quetta",
+       phones:[{d:"UAN +92 331-111-0463", t:"+923311110463"}], wa:NP,
+       web:"https://esaenergy.com.pk/", webLabel:"esaenergy.com.pk",
+       brands:"JA Solar (product page); other brands not published",
+       services:["Residential","Commercial","Industrial","Agriculture","Off-grid","Hybrid / battery","Net metering"],
+       price:NP, cert:NP,
+       src:"https://esaenergy.com.pk/"},
+      {name:"Zi Solar (Pvt) Ltd", city:"Karachi",
+       addr:"67 Street 23, Khayaban-e-Badban, Phase-V DHA, Karachi · also Lahore & Islamabad",
+       phones:[{d:"021-35244298", t:"+922135244298"},{d:"0331-2999009", t:"+923312999009"},{d:"0334-3477655", t:"+923343477655"}], wa:NP,
+       web:"https://www.zisolar.com.pk", webLabel:"zisolar.com.pk",
+       brands:"Authorised Hyundai Solar distributor; inverters SMA, Huawei",
+       services:["Residential","Commercial"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-1 · CR/21/021/C-1 — in the 2023 list with validity to 30-12-2024. Stale; do not treat as current certification. (Phone from directory listings — not re-verified on the company's own site.)"},
+       src:"https://www.zisolar.com.pk"},
+      {name:"Adaptive Technologies (Pvt) Ltd", city:"Karachi",
+       addr:"Suite 3, 4th Floor, Dean Arcade, Block-8, Clifton, Karachi · coverage: ICT, Punjab, Sindh, KPK, Balochistan (per PPIB)",
+       phones:[{d:"021-35865896", t:"+922135865896"},{d:"0300-8280123", t:"+923008280123"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP, services:["Solar installation"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-1 · CR/25/005/C-1/RN-1 (via ProChuno transcription of the PPIB list dated 29 Oct 2026)."},
+       src:"https://prochuno.com/solar-installers-karachi.html"},
+
+      /* ---------------- LAHORE ---------------- */
+      {name:"Alpha Solar", city:"Lahore", sizes:[5,10,15,20], ppk:"Works out to roughly Rs 85,000–148,800 per kW across the published sizes (computed from the prices above; on-grid incl. net metering).",
+       addr:"Head Office 703-Q Block, Phase-2, Johar Town, Lahore · Islamabad office 0342-3813810 · Sialkot 0344-3813810",
+       phones:[{d:"+92 343-3813810", t:"+923433813810"},{d:"042-35227135-36", t:"+924235227135"}], wa:NP,
+       web:"https://alphasolar.com.pk", webLabel:"alphasolar.com.pk",
+       brands:"Panels: LONGi, Jinko, Canadian, JA, Trina, Aiko, TCL · Inverters: GoodWe, FoxESS, Solis, Sofar, Huawei, Growatt, SolarMax, MaxPower, Itel · Batteries: Pylontech, Dyness, Soluna, Pytes, BYD",
+       services:["Residential","Commercial","Net metering","Hybrid / battery","Maintenance"],
+       price:"Own site, 14 Oct 2026, on-grid incl. net metering: 5 kW Rs 744,000 · 10 kW Rs 996,000 · 15 kW Rs 1,335,000 · 20 kW Rs 1,700,000",
+       cert:{k:"ok", t:"PPIB C-1 · CR/25/043/C-1/RN-1 (via ProChuno transcription of the PPIB list dated 29 Oct 2026)."},
+       src:"http://alphasolar.com.pk/solar-on-grid-system/"},
+      {name:"Premier Energy (Pvt) Ltd", city:"Lahore", sizes:[5,10,15,20],
+       addr:"42 E/1, Ghalib Rd, Gulberg III, Lahore · claims projects in 35+ cities; systems 5 kW–500 kW",
+       phones:[{d:"UAN (042) 111-234-235", t:"+9242111234235"}], wa:"923224234235",
+       web:"https://premierenergy.com.pk", webLabel:"premierenergy.com.pk",
+       brands:NP,
+       services:["Residential","Commercial","Industrial","Net metering","Hybrid / battery"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-1 · CR/26/098/C-1/RN-1 (via ProChuno); described as AEDB-certified in trade guides."},
+       src:"https://prochuno.com/solar-installers-lahore.html"},
+      {name:"Pantera Energy (Pvt) Ltd", city:"Lahore",
+       addr:"12-A XX, Khayaban-e-Iqbal, DHA Phase 3, Lahore",
+       phones:[{d:"(042) 111-112-886", t:"+9242111112886"},{d:"0344-4457883 (PPIB-listed)", t:"+923444457883"}], wa:NP,
+       web:"https://panteraenergy.pk/about-us/", webLabel:"panteraenergy.pk",
+       brands:NP,
+       services:["Residential","Commercial","Agriculture","Off-grid","Hybrid / battery","Maintenance"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-1 · CR/26/050/C-1/RN-1 (via ProChuno); PEC CB + AEDB V1 per company profiles."},
+       src:"https://panteraenergy.pk/about-us/"},
+      {name:"SkyElectric (Pvt) Ltd — Lahore office", city:"Lahore", sizes:[3,5,10,15,20],
+       addr:"Building 58, Sector XX, Khayaban-e-Iqbal, Phase III DHA, Lahore (moved Sep 2026) · HQ Islamabad",
+       phones:[{d:"Toll-free 0800-77759", t:"080077759"}], wa:NP,
+       web:"https://www.skyelectric.com", webLabel:"skyelectric.com",
+       brands:"Own smart inverter + lithium storage system; panel brands not published",
+       services:["Residential","Commercial","Industrial","Hybrid / battery"],
+       price:NP,
+       cert:{k:"ok", t:"AEDB CR/24/002/C-1/RN-1 — per the AJKED vendor/installer list."},
+       src:"https://ajked.gok.pk/vendor-installer-list-2/"},
+      {name:"DS Global (Pvt) Ltd (DSG Energy)", city:"Lahore",
+       addr:"20, Tariq Block, Garden Town, Lahore",
+       phones:[{d:"042-35885533", t:"+924235885533"},{d:"0321-6342004", t:"+923216342004"}], wa:NP,
+       web:"https://dsgenergy.com.pk", webLabel:"dsgenergy.com.pk",
+       brands:NP,
+       services:["Residential","Commercial","Industrial","Agriculture","Hybrid / battery","Net metering","Maintenance"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-1 · CR/25/028/C-1/RN-1, valid to 17 Mar 2028 (via ProChuno transcription)."},
+       src:"https://prochuno.com/solar-installers-lahore.html"},
+      {name:"Brisk International", city:"Lahore",
+       addr:"111-Y Commercial, 2nd Floor, Phase-III DHA, Lahore",
+       phones:[{d:"042-35730150", t:"+924235730150"},{d:"0322-4998044", t:"+923224998044"},{d:"0321-4658431", t:"+923214658431"}], wa:NP,
+       web:"https://briskintl.com", webLabel:"briskintl.com",
+       brands:NP,
+       services:["Residential","Commercial","Industrial","Agriculture"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-1 · CR/25/018/C-1/RN-1 (via ProChuno transcription)."},
+       src:"https://prochuno.com/solar-installers-lahore.html"},
+      {name:"Drive2Green", city:"Lahore",
+       addr:"359, 1st Floor, Block G3, Johar Town, Lahore",
+       phones:[{d:"042-35136359", t:"+924235136359"},{d:"0331-0402402", t:"+923310402402"}], wa:NP,
+       web:"https://drive2green.com", webLabel:"drive2green.com",
+       brands:NP,
+       services:["Residential","Commercial","Industrial","Agriculture","Net metering","Maintenance"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-2 · CR/26/077/C-2/RN-1 (via ProChuno transcription)."},
+       src:"https://prochuno.com/solar-installers-lahore.html"},
+      {name:"Penta-H (Pvt) Ltd", city:"Lahore",
+       addr:"House 289, Janiper, Sector C, Bahria Town, Lahore",
+       phones:[{d:"0301-8445040", t:"+923018445040"}], wa:NP,
+       web:"https://pentahenergy.com", webLabel:"pentahenergy.com",
+       brands:NP,
+       services:["Residential","Commercial","Industrial","Hybrid / battery","Net metering","Maintenance"],
+       price:NP,
+       cert:{k:"ok", t:"PPIB C-1 · CR/25/075/C-1/RN-1, valid to 30 Jun 2028 (via ProChuno transcription)."},
+       src:"https://prochuno.com/solar-installers-lahore.html"},
+
+      /* ---------------- ISLAMABAD ---------------- */
+      {name:"SkyElectric (Pvt) Ltd — HQ", city:"Islamabad", sizes:[3,5,10,15,20],
+       addr:"AJ Tower, Gulberg Greens, Islamabad (moved Aug 2026; formerly ISE Tower, Blue Area) · 10,000+ systems claimed",
+       phones:[{d:"Toll-free 0800-77759", t:"080077759"},{d:"+92 51 8487480 (former office)", t:"+92518487480"}], wa:NP,
+       web:"https://www.skyelectric.com", webLabel:"skyelectric.com",
+       brands:"Own smart inverter + lithium storage system",
+       services:["Residential","Commercial","Industrial","Hybrid / battery"],
+       price:NP,
+       cert:{k:"ok", t:"AEDB CR/24/002/C-1/RN-1 — per the AJKED vendor/installer list."},
+       src:"https://ajked.gok.pk/vendor-installer-list-2/"},
+      {name:"Zero Carbon", city:"Islamabad",
+       addr:"1st Floor, Dunya News, Plot 11, Sector G-7/1, Zero Point, Islamabad · Lahore office: 76-H Firdous Market Rd, Gulberg III",
+       phones:[{d:"0311-1111926", t:"+923111111926"}], wa:NP,
+       web:"https://zerocarbon.com.pk/about-us/", webLabel:"zerocarbon.com.pk",
+       brands:"Certified Canadian Solar distributor",
+       services:["Residential","Commercial","Industrial","Agriculture","Net metering","Hybrid / battery"],
+       price:NP,
+       cert:{k:"claim", t:"Company's own site claims the highest AEDB licence, 'ARE-VI' — the company's wording; it was not independently verified against the current PPIB list."},
+       src:"https://zerocarbon.com.pk/about-us/"},
+      {name:"Tripower Engineering Solutions", city:"Islamabad",
+       addr:"Office 21, 2nd Floor, Quaid Plaza, I-9 Markaz, Islamabad · serves DHA, Bahria, F/G sectors, Blue Area",
+       phones:[{d:"0333-5207151", t:"+923335207151"}], wa:NP,
+       web:"https://tripower.com.pk/", webLabel:"tripower.com.pk",
+       brands:NP,
+       services:["Residential","Commercial","Net metering","Maintenance"],
+       price:NP,
+       cert:{k:"claim", t:"Own site claims NEPRA-certified / IESCO-approved — not independently verified against a list."},
+       src:"https://tripower.com.pk/"},
+      {name:"Fast Solution Technologies", city:"Islamabad",
+       addr:"Shop 3, Basement, ZamZama Center, Main PWD Rd, Pakistan Town, Islamabad · serves Islamabad & Rawalpindi",
+       phones:[{d:"0321-5889168", t:"+923215889168"},{d:"051-8317518", t:"+92518317518"}], wa:"923310003120",
+       web:"https://fastsolutiontechnologies.com/solar-installation-packages-islamabad-rawalpindi/", webLabel:"fastsolutiontechnologies.com",
+       brands:NP,
+       services:["Residential","Commercial","Net metering","Hybrid / battery","Maintenance"],
+       price:NP, cert:NP,
+       src:"https://fastsolutiontechnologies.com/solar-installation-packages-islamabad-rawalpindi/"},
+      {name:"Solar Pakistan", city:"Islamabad",
+       addr:"5th Floor, Airport Business Centre, Block A, TopCity-1, Islamabad · also I-9 & PWD Islamabad, Airport Rd Lahore (0316-0150344)",
+       phones:[{d:"0325-8559555 (call / WhatsApp)", t:"+923258559555"},{d:"0333-4135438", t:"+923334135438"}], wa:"923258559555",
+       web:"https://solarpakistan.org/", webLabel:"solarpakistan.org",
+       brands:"FOX ESS official distribution partner; Voltrra exclusive distributor (Islamabad / Rawalpindi / KP) — inverters & batteries",
+       services:["Residential","Commercial","Industrial","Hybrid / battery"],
+       price:NP, cert:NP,
+       src:"https://solarpakistan.org/"},
+      {name:"Grid Solar Installation", city:"Islamabad",
+       addr:"Islamabad (street address not published) · also serves Lahore & Karachi",
+       phones:[{d:"+92 312-9083343", t:"+923129083343"}], wa:NP,
+       web:"https://www.gridsolarinstallation.com/", webLabel:"gridsolarinstallation.com",
+       brands:"Panels: LONGi, Jinko, Canadian Solar · Inverters: Huawei, Sungrow · Batteries: Pylontech",
+       services:["Residential","Commercial","Off-grid","Hybrid / battery","Net metering"],
+       price:NP, cert:NP,
+       src:"https://www.gridsolarinstallation.com/"},
+      {name:"Abdul Rafay Solar Solutions", city:"Islamabad",
+       addr:"Buland Market, Street 31, G-10/1, Islamabad · serves Islamabad, Rawalpindi, Wah Cantt, Attock",
+       phones:[{d:"0310-5060178 (WhatsApp / call)", t:"+923105060178"}], wa:"923105060178",
+       web:"https://abdulrafaysolarsolutions.pk/", webLabel:"abdulrafaysolarsolutions.pk",
+       brands:"Inverters: Growatt, Inverex",
+       services:["Residential","Commercial","Off-grid","Hybrid / battery","Net metering"],
+       price:NP, cert:NP,
+       src:"https://abdulrafaysolarsolutions.pk/"},
+      {name:"Solar Golden Ray", city:"Islamabad",
+       addr:"Main Fateh Jhang Rd, near Multan Sweet, Tarnol, Islamabad · serves Islamabad & Rawalpindi; free site survey, written quotation",
+       phones:[{d:"+92 313-9007878", t:"+923139007878"}], wa:NP,
+       web:"https://www.solargoldenray.pk/", webLabel:"solargoldenray.pk",
+       brands:NP,
+       services:["Residential","Commercial","Industrial","Agriculture","Off-grid","Hybrid / battery"],
+       price:NP, cert:NP,
+       src:"https://www.solargoldenray.pk/"},
+
+      /* ---------------- RAWALPINDI ---------------- */
+      {name:"Benchmark Technologies", city:"Rawalpindi",
+       addr:"Ground Floor, National Plaza, Lane 5, Peshawar Rd, Rawalpindi · benchmark@bmtpak.com",
+       phones:[{d:"051-5167020-1", t:"+92515167020"},{d:"0333-5170711", t:"+923335170711"}], wa:NP,
+       web:NP, webLabel:NP,
+       brands:"Solar + wind; batteries, inverters, solar street lighting, water pumping",
+       services:["Residential","Commercial","Agriculture"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/21/008/C-3 (Rev-1) — Oct 2024 PPIB list, validity shown to 30-06-2023. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+      {name:"UB Solar & Security Solutions", city:"Rawalpindi",
+       addr:"Shop G-24, Ground Floor, Midway Centre, Murree Rd, Rawalpindi · ubsolarpk@gmail.com",
+       phones:[{d:"0321-5314540", t:"+923215314540"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/24/023/C-3 (Rev-1) — Oct 2024 PPIB list, validity shown to 09-05-2025. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+      {name:"AccuTech International", city:"Rawalpindi",
+       addr:"32, Quaid-e-Azam Market, Aslam Market, Wah Cantt, Rawalpindi · accutechinternational@gmail.com",
+       phones:[{d:"0344-4000374", t:"+923444000374"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/22/007/C-3 (Rev-2) — Oct 2024 PPIB list, validity shown to 13-01-2025. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+      {name:"Kaiynat Hitech Services", city:"Rawalpindi",
+       addr:"Office 1, Basement, Plaza 50, St 7, Wallayat Complex, Bahria Town Phase VII, Rawalpindi · info@khs.com.pk",
+       phones:[{d:"0321-8550914", t:"+923218550914"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/24/047/C-3 (Rev-1) — Oct 2024 PPIB list, validity shown to 23-10-2025. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+
+      /* ---------------- FAISALABAD ---------------- */
+      {name:"Solar Works Pakistan", city:"Faisalabad", sizes:[10,15,20],
+       addr:"Head Office Main Blvd, Sargodha Rd, Block F, FDA City, Faisalabad · Lahore office in Gulberg · est. 2021, 300+ customers claimed",
+       phones:[{d:"WhatsApp 0336-6664321", t:"+923366664321"}], wa:"923366664321",
+       web:"https://solarworks.pk/", webLabel:"solarworks.pk",
+       brands:"Panels: LONGi Hi-MO X10, Jinko Tiger Neo, AIKO, Canadian, JA · Inverters: Huawei, Sungrow, Solis, Inverex · Batteries: Pylontech, Dyness, Narada, Soluna",
+       services:["Residential","Commercial","Industrial","Agriculture","Net metering","Hybrid / battery"],
+       price:NP, cert:NP,
+       src:"https://solarworks.pk/"},
+      {name:"Solaris Engineering (SMC-Pvt) Ltd", city:"Faisalabad",
+       addr:"P-43, Super Kareem Market, Eden Garden, Canal Rd, Faisalabad · ceo@solaris.pk",
+       phones:[{d:"041-6074250", t:"+92416074250"},{d:"0341-9441124", t:"+923419441124"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/22/021/C-3 (Rev-1) — Oct 2024 PPIB list, validity shown to 30-06-2024. Stale; re-check the current list. Also listed on LocalePak (no phone shown there)."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+      {name:"SolarX Energy (SMC-Pvt) Ltd", city:"Faisalabad",
+       addr:"A230, 1st Floor, Shoaib Bilal Market, Main Sargodha Rd, Faisalabad · info@solarx.pk",
+       phones:[{d:"041-8787699", t:"+92418787699"},{d:"0300-0076527", t:"+923000076527"},{d:"0320-4444435", t:"+923204444435"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/23/048/C-3 (Rev-1) — Oct 2024 PPIB list, validity shown to 23-10-2025. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+      {name:"Shahzad Solar (Pvt) Ltd", city:"Faisalabad",
+       addr:"160-A, Sheikh Colony, Jhang Rd, Faisalabad · shahzadsolar.director@gmail.com",
+       phones:[{d:"0332-7619344", t:"+923327619344"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/22/027/C-3 — Oct 2024 PPIB list, validity shown to 30-06-2024. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+
+      /* ---------------- MULTAN ---------------- */
+      {name:"Royal Solar Energy (Pvt) Ltd", city:"Multan",
+       addr:"Head Office 888/9-E Bosan Rd, near PTCL Exchange, Al Atta Colony, Multan · Innovation Office: Pace N Pace Mall, 3rd Floor",
+       phones:[{d:"UAN +92 310-4400999 (own site)", t:"+923104400999"}], wa:NP,
+       web:"https://royalsolar.pk/solar-financing/", webLabel:"royalsolar.pk",
+       brands:"Panels: JA Solar, ZNShine, Yingli, Astronergy · Own Royal Nexsun / Hyvion hybrid inverters, Royal lithium batteries",
+       services:["Residential","Commercial","Industrial","Net metering","Hybrid / battery","Maintenance","Financing"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-2 · CR/24/004/C-2 (Rev-3) — Oct 2024 PPIB list, validity shown to 17-11-2024. Stale; re-check. (PPIB list shows different numbers — 0313-6070017 / 0310-6259999; the UAN above is from the company's own site.)"},
+       src:"https://royalsolar.pk/solar-financing/"},
+      {name:"Unity Solar Energy", city:"Multan",
+       addr:"Shop 346–348, Main Market, Mumtazabad, Multan · serves nationwide",
+       phones:[{d:"+92 306-9387974", t:"+923069387974"}], wa:NP,
+       web:"https://www.unitysolarenergy.com/", webLabel:"unitysolarenergy.com",
+       brands:NP,
+       services:["Residential","Commercial","Off-grid","Hybrid / battery","Net metering"],
+       price:NP, cert:NP,
+       src:"https://www.unitysolarenergy.com/"},
+      {name:"Otium Technology (Pvt) Ltd", city:"Multan",
+       addr:"3rd Floor, Khawar Center, Nusrat Rd, near SP Chowk, Multan Cantt",
+       phones:[{d:"+92 318-1113040", t:"+923181113040"}], wa:NP,
+       web:"https://otiumtech.com/", webLabel:"otiumtech.com",
+       brands:NP, services:["Solar installation"],
+       price:NP, cert:NP,
+       src:"https://otiumtech.com/"},
+      {name:"Punjab Solar", city:"Multan",
+       addr:"2507A, AHHM Enterprises, 1st Floor, Dolat Gate, Multan",
+       phones:[{d:"+92 311-0876527", t:"+923110876527"}], wa:NP,
+       web:"https://punjabsolar.pk", webLabel:"punjabsolar.pk",
+       brands:NP, services:["Solar installation"],
+       price:NP, cert:NP,
+       src:"https://punjabsolar.pk"},
+
+      /* ---------------- PESHAWAR ---------------- */
+      {name:"Syed Solar Energy (Pvt) Ltd", city:"Peshawar",
+       addr:"Sherkera, Peshawar (Nawab Got, near Shahid Bakers, Tur Kaley Sherkera) · serves Peshawar & KP; in solar since 2018",
+       phones:[{d:"0304-4678929", t:"+923044678929"}], wa:NP,
+       web:"https://syedsolarenergy.com/", webLabel:"syedsolarenergy.com",
+       brands:"Lithium batteries & inverters supplied; brands not listed",
+       services:["Residential","Commercial","Off-grid","Hybrid / battery","Net metering","Maintenance"],
+       price:NP, cert:NP,
+       src:"https://syedsolarenergy.com/"},
+      {name:"Greenline Solar Engineering (Greenline Solar KPK)", city:"Peshawar",
+       addr:"HQ Shop 3&4, 2nd Floor, Palace Market, Karkhano; Phase 3 Chowk, Hayatabad, Peshawar · Swat branch 0346-0972959 · 300+ homes across KPK claimed",
+       phones:[{d:"0335-7221188", t:"+923357221188"}], wa:NP,
+       web:"https://www.greenlinesolarengineering.company/", webLabel:"greenlinesolarengineering.company",
+       brands:NP,
+       services:["Residential","Commercial","Net metering","Hybrid / battery"],
+       price:NP, cert:NP,
+       src:"https://www.greenlinesolarengineering.company/"},
+      {name:"Solar First Enterprises", city:"Peshawar",
+       addr:"Plot 138-H, Industrial Estate, Hayatabad, Peshawar · solarfirst1987@gmail.com",
+       phones:[{d:"0314-5553030", t:"+923145553030"},{d:"091-5891222", t:"+92915891222"}], wa:NP,
+       web:NP, webLabel:NP, brands:NP,
+       services:["Solar installation"],
+       price:NP,
+       cert:{k:"stale", t:"PPIB C-3 · CR/24/037/C-3 (Rev-2) — Oct 2024 PPIB list, validity shown to 30-06-2025. Stale; re-check the current list."},
+       src:"https://www.ppib.gov.pk/installers/List%20of%20Certified%20Installer%20C-3%20(25-10-2024).pdf"},
+      {name:"Al Syed Solar Solutions (SMC-Pvt) Ltd", city:"Peshawar",
+       addr:"Karkhano Palace Market Units 10–11, Peshawar · also Kohat Rd & Nasir Bagh Rd branches",
+       phones:[{d:"UAN 0310-2222-393", t:"+923102222393"}], wa:NP,
+       web:"https://www.alsyedsolar.com", webLabel:"alsyedsolar.com",
+       brands:"Powerstone panels; SunX (storefront signage)",
+       services:["Residential","Commercial","Industrial","Hybrid / battery"],
+       price:NP,
+       cert:{k:"claim", t:"No certification published. (Number from company social posts — not re-verified on the company's own site.)"},
+       src:"https://www.alsyedsolar.com"},
+
+      /* ---------------- QUETTA ---------------- */
+      {name:"KIES — Kamran Imran Enterprises & Sons", city:"Quetta",
+       addr:"House 118C, Chiltan Housing Scheme, Airport Rd, Quetta · works in 20+ districts across Pakistan",
+       phones:[{d:"+92 310-0333391", t:"+923100333391"},{d:"081-2088699", t:"+92812088699"}], wa:"923351558828",
+       web:"https://www.kies.com.pk/", webLabel:"kies.com.pk",
+       brands:"Inverex authorised channel partner (625W JW-PRO panels)",
+       services:["Residential","Commercial","Industrial","Net metering"],
+       price:NP,
+       cert:{k:"ok", t:"Own site: PEC C1 licence, AEDB-enlisted solar & wind installer."},
+       src:"https://www.kies.com.pk/"},
+      {name:"Zeeshan Solar & Electronics", city:"Quetta",
+       addr:"In front of Mashallah Marriage Hall, Main Ali Abad Rd, Hazara Town, Quetta · no standalone website found — Facebook page only",
+       phones:[{d:"WhatsApp 0346-2947718", t:"+923462947718"}], wa:"923462947718",
+       web:NP, webLabel:NP, brands:NP,
+       services:["Residential","Commercial","Hybrid / battery","Maintenance"],
+       price:NP, cert:NP,
+       src:NP, srcNote:"company Facebook page (via FindGlocal listing)"},
+      {name:"Solar Star Quetta", city:"Quetta",
+       addr:"Shop 8&10, Killi Barat Rd, Corner Main IT University Rd, Jinnah Town, Quetta",
+       phones:[{d:"0304-4015602 (company ad)", t:"+923044015602"},{d:"+92 332-7873640 (directory header)", t:"+923327873640"}], wa:NP,
+       web:NP, webLabel:NP,
+       brands:"GoodWe authorised dealer 2026–27",
+       services:["Residential","Commercial","Agriculture","Maintenance"],
+       price:NP,
+       cert:{k:"claim", t:"No certification published. Note: two different numbers appear in the company's public material (ad copy vs directory header) — both are shown; confirm on their Facebook page."},
+       src:NP, srcNote:"company Facebook page (via FindGlocal listing)"}
+    ];
+
+    var CITIES = ["All cities","Karachi","Lahore","Islamabad","Rawalpindi","Faisalabad","Multan","Peshawar","Quetta"];
+    var state = { city: "All cities", q: "", tags: {}, brand: null, cert: null, size: null };
+
+    function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+    function matchesTags(it){
+      if (state.tags.net && it.services.join(" ").toLowerCase().indexOf("net metering") === -1) return false;
+      if (state.tags.hybrid && it.services.join(" ").toLowerCase().indexOf("hybrid") === -1) return false;
+      if (state.tags.commercial && !(it.services.indexOf("Commercial") > -1 || it.services.indexOf("Industrial") > -1)) return false;
+      if (state.tags.price && !it.price) return false;
+      if (state.tags.cert && !it.cert) return false;
+      if (state.tags.ongrid && it.services.join(" ").toLowerCase().indexOf("net metering") === -1) return false;
+      return true;
+    }
+    function matchesQ(it){
+      if (!state.q) return true;
+      var hay = (it.name + " " + it.city + " " + it.addr + " " + (it.brands||"") + " " + it.services.join(" ")).toLowerCase();
+      return hay.indexOf(state.q.toLowerCase()) > -1;
+    }
+    function matchesExtra(it){
+      if (state.brand && (it.brands||"").toLowerCase().indexOf(state.brand) === -1) return false;
+      if (state.cert){
+        if (state.cert === "none") { if (it.cert) return false; }
+        else if (!it.cert || it.cert.k !== state.cert) return false;
+      }
+      if (state.size && (!it.sizes || it.sizes.indexOf(state.size) === -1)) return false;
+      return true;
+    }
+    function cardHTML(it){
+      var h = '<article class="card"><div class="cardtop"><h3>' + esc(it.name) + '</h3><span class="citytag">' + it.city + '</span></div>';
+      h += '<p class="addr">' + esc(it.addr) + '</p>';
+      h += '<div class="contact">';
+      it.phones.forEach(function(p){ h += '<a class="btn btn-call" href="tel:' + p.t + '">☎ ' + esc(p.d) + '</a>'; });
+      if (it.wa) h += '<a class="btn btn-wa" href="https://wa.me/' + it.wa + '" target="_blank" rel="noopener">WhatsApp</a>';
+      if (it.web) h += '<a class="btn btn-web" href="' + it.web + '" target="_blank" rel="noopener">Website ↗</a>';
+      h += '</div>';
+      h += '<div class="svc">' + it.services.map(function(s){ return '<span>' + esc(s) + '</span>'; }).join("") + '</div>';
+      h += '<p class="meta"><b>Brands:</b> ' + (it.brands ? esc(it.brands) : '<span class="np">not published</span>') + '</p>';
+      if (it.price) h += '<div class="pricebox"><b>Published prices</b>' + esc(it.price) + (it.ppk ? '<span class="ppk">' + esc(it.ppk) + '</span>' : '') + '</div>';
+      if (it.cert) h += '<div class="cert ' + it.cert.k + '">' + esc(it.cert.t) + '</div>';
+      else h += '<div class="cert">Certification: <span class="np">not published</span> — ask the company for its current PPIB/AEDB certificate.</div>';
+      var srcHTML = it.src ? '<span>Source: <a href="' + it.src + '" target="_blank" rel="noopener">company / official list</a></span>' : '<span>Source: ' + esc(it.srcNote || "company listing") + '</span>';
+      h += '<div class="cardfoot">' + srcHTML + '<span>Checked 9 Nov 2026</span></div>';
+      h += '</article>';
+      return h;
+    }
+    function render(){
+      var list = INSTALLERS.filter(function(it){
+        return (state.city === "All cities" || it.city === state.city) && matchesTags(it) && matchesQ(it) && matchesExtra(it);
+      });
+      document.getElementById("grid").innerHTML = list.map(cardHTML).join("");
+      document.getElementById("empty").hidden = list.length > 0;
+      document.getElementById("resultline").textContent = "Showing " + list.length + " of " + INSTALLERS.length + " verified installers" + (state.city !== "All cities" ? " in " + state.city : "") + ".";
+    }
+    // City chips
+    var cityWrap = document.getElementById("cities");
+    CITIES.forEach(function(c){
+      var n = c === "All cities" ? INSTALLERS.length : INSTALLERS.filter(function(i){ return i.city === c; }).length;
+      var b = document.createElement("button");
+      b.className = "chipbtn"; b.setAttribute("aria-pressed", c === "All cities" ? "true" : "false");
+      b.innerHTML = c + " <small>" + n + "</small>";
+      b.addEventListener("click", function(){
+        state.city = c;
+        cityWrap.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+        b.setAttribute("aria-pressed","true");
+        render();
+      });
+      cityWrap.appendChild(b);
+    });
+    document.querySelectorAll("#tags .tagbtn").forEach(function(b){
+      b.addEventListener("click", function(){
+        var t = b.getAttribute("data-tag");
+        var on = b.getAttribute("aria-pressed") === "true";
+        b.setAttribute("aria-pressed", on ? "false" : "true");
+        state.tags[t] = !on;
+        render();
+      });
+    });
+    document.getElementById("q").addEventListener("input", function(e){ state.q = e.target.value.trim(); render(); });
+    function wireSingleRow(id, key, parse){
+      document.querySelectorAll("#" + id + " button").forEach(function(b){
+        b.addEventListener("click", function(){
+          var on = b.getAttribute("aria-pressed") === "true";
+          document.querySelectorAll("#" + id + " button").forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+          state[key] = on ? null : parse(b);
+          if (!on) b.setAttribute("aria-pressed","true");
+          render();
+        });
+      });
+    }
+    wireSingleRow("brands", "brand", function(b){ return b.getAttribute("data-brand"); });
+    wireSingleRow("certs", "cert", function(b){ return b.getAttribute("data-cert"); });
+    wireSingleRow("sizes", "size", function(b){ return parseInt(b.getAttribute("data-size"), 10); });
+
+    // Price chart (published on-grid prices, PKR; scale 0–1,600,000)
+    var CHART = [
+      {label:"5 kW — Alpha Solar", sub:"Lahore · exact, own site", lo:744000, hi:744000, kind:"exact", val:"Rs 744,000"},
+      {label:"5 kW — Beyond Green", sub:"Karachi · range, own site", lo:620000, hi:700000, kind:"range", val:"Rs 6.2–7.0 lakh"},
+      {label:"5 kW — Solar Citizen", sub:"Lahore · indicative, own site", lo:550000, hi:800000, kind:"range", val:"Rs 5.5–8.0 lakh"},
+      {label:"5 kW — market guide", sub:"GharHub 2026 · not a quote", lo:700000, hi:850000, kind:"guide", val:"Rs 7.0–8.5 lakh"},
+      {label:"10 kW — Alpha Solar", sub:"Lahore · exact, own site", lo:996000, hi:996000, kind:"exact", val:"Rs 996,000"},
+      {label:"10 kW — Solar Citizen", sub:"Lahore · indicative, own site", lo:1050000, hi:1500000, kind:"range", val:"Rs 10.5–15.0 lakh"},
+      {label:"10 kW — market guide", sub:"GharHub 2026 · not a quote", lo:1250000, hi:1550000, kind:"guide", val:"Rs 12.5–15.5 lakh"}
+    ];
+    var MAX = 1600000;
+    document.getElementById("chart").innerHTML = CHART.map(function(r){
+      var left = (r.lo / MAX * 100).toFixed(1), w = Math.max((r.hi - r.lo) / MAX * 100, 1.2).toFixed(1);
+      return '<div class="crow"><div class="clabel">' + r.label + '<small>' + r.sub + '</small></div>' +
+        '<div class="track"><div class="bar ' + r.kind + '" style="left:' + left + '%;width:' + w + '%"></div></div>' +
+        '<div class="cval">' + r.val + '</div></div>';
+    }).join("");
+    render();
+    </script>
+  </body>
+</html>

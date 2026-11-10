@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Add a listing — Solar Installers Pakistan</title>
+    <meta name="description" content="Add your solar installation business to the Solar Installers Pakistan directory for free. Listings are verified before publishing; the form sends nothing to a server." />
+    <link rel="canonical" href="https://solarinstallerspakistan.com/add-listing.html" />
+    <meta property="og:title" content="Add a listing — Solar Installers Pakistan" />
+    <meta property="og:description" content="Add your solar installation business to the Solar Installers Pakistan directory for free. Listings are verified before publishing; the form sends nothing to a server." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://solarinstallerspakistan.com/add-listing.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />  </head>
+  <body>
+    <div class="wrap">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html">Solar Installers <span class="sun">Pakistan</span></a>
+        <div class="navlinks"><a href="index.html">Directory</a><a href="add-listing.html" class="active">Add a listing</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy</a></div>
+      </nav>
+      <main class="page">
+
+        <h1>Add your listing — free</h1>
+        <p>List your solar installation business in the directory. It costs nothing. <strong>Every listing is verified before it is published</strong> — we check your phone number and details against your website or a public listing first, so a new listing can take a few days to appear.</p>
+        <p><strong>How this form works:</strong> it sends nothing to a server. When you press the button below, it opens your own email app with a pre-filled message to <a href="mailto:waseemchuhan676@gmail.com">waseemchuhan676@gmail.com</a>. Nothing is sent until you press send in your email app. Only send details you are happy to have published.</p>
+        <form class="form" id="listingForm">
+          <label for="f-name">Business name *</label>
+          <input type="text" id="f-name" name="name" required placeholder="e.g. Your Company Name (Pvt) Ltd" />
+          <label for="f-city">City *</label>
+          <select id="f-city" name="city" required>
+            <option value="" selected>Choose a city…</option>
+            <option>Karachi</option><option>Lahore</option><option>Islamabad</option><option>Rawalpindi</option><option>Faisalabad</option><option>Multan</option><option>Peshawar</option><option>Quetta</option>
+          </select>
+          <label for="f-phone">Phone number * <span class="hint">— the number customers should call, as shown on your website</span></label>
+          <input type="tel" id="f-phone" name="phone" required placeholder="e.g. 0300-1234567" />
+          <label for="f-wa">WhatsApp number <span class="hint">— if different from the phone number</span></label>
+          <input type="tel" id="f-wa" name="whatsapp" placeholder="e.g. 0300-1234567" />
+          <label for="f-web">Website <span class="hint">— your own website or Facebook page</span></label>
+          <input type="url" id="f-web" name="website" placeholder="https://…" />
+          <label>Services</label>
+          <div class="checks"><label><input type="checkbox" name="service" value="Residential" /> Residential</label><label><input type="checkbox" name="service" value="Commercial" /> Commercial</label><label><input type="checkbox" name="service" value="Industrial" /> Industrial</label><label><input type="checkbox" name="service" value="Agriculture" /> Agriculture</label><label><input type="checkbox" name="service" value="Net metering" /> Net metering</label><label><input type="checkbox" name="service" value="Hybrid / battery" /> Hybrid / battery</label><label><input type="checkbox" name="service" value="Off-grid" /> Off-grid</label><label><input type="checkbox" name="service" value="Maintenance" /> Maintenance</label><label><input type="checkbox" name="service" value="Financing" /> Financing</label></div>
+          <label for="f-panels">Panel brands you sell</label>
+          <input type="text" id="f-panels" name="panels" placeholder="e.g. LONGi, Jinko, Canadian Solar" />
+          <label for="f-inv">Inverter brands you sell</label>
+          <input type="text" id="f-inv" name="inverters" placeholder="e.g. Huawei, Growatt, GoodWe" />
+          <label for="f-batt">Battery brands you sell</label>
+          <input type="text" id="f-batt" name="batteries" placeholder="e.g. Pylontech, Dyness" />
+          <label for="f-areas">Areas you serve</label>
+          <input type="text" id="f-areas" name="areas" placeholder="e.g. DHA, Gulberg, Bahria Town" />
+          <label for="f-notes">Anything else <span class="hint">— certifications, warranty, system sizes, or a note for us</span></label>
+          <textarea id="f-notes" name="notes" rows="4" placeholder="e.g. 5-year workmanship warranty, free site survey"></textarea>
+          <button type="submit">Send listing request by email</button>
+        </form>
+        <p class="note" id="formNote" hidden>Your email app should now be open with the listing details filled in — press send there to complete the request. If it did not open, email the details directly to <a href="mailto:waseemchuhan676@gmail.com">waseemchuhan676@gmail.com</a>.</p>
+        <script>
+        document.getElementById("listingForm").addEventListener("submit", function (e) {
+          e.preventDefault();
+          var f = e.target;
+          function v(name) { var el = f.elements[name]; return el ? el.value.trim() : ""; }
+          var services = [];
+          f.querySelectorAll('input[name="service"]:checked').forEach(function (c) { services.push(c.value); });
+          var lines = [
+            "New listing request — Solar Installers Pakistan",
+            "",
+            "Business name: " + v("name"),
+            "City: " + v("city"),
+            "Phone: " + v("phone"),
+            "WhatsApp: " + (v("whatsapp") || "same as phone / not published"),
+            "Website: " + (v("website") || "not published"),
+            "Services: " + (services.length ? services.join(", ") : "not stated"),
+            "Panel brands: " + (v("panels") || "not published"),
+            "Inverter brands: " + (v("inverters") || "not published"),
+            "Battery brands: " + (v("batteries") || "not published"),
+            "Areas served: " + (v("areas") || "not stated"),
+            "Other details: " + (v("notes") || "—"),
+            "",
+            "I understand this listing will be verified against a public source before it is published."
+          ];
+          var subject = "New listing request — Solar Installers Pakistan — " + v("name");
+          window.location.href = "mailto:waseemchuhan676@gmail.com?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(lines.join("\n"));
+          document.getElementById("formNote").hidden = false;
+        });
+        </script>
+
+      </main>
+<footer>
+        <nav class="footnav" aria-label="Footer">
+          <a href="index.html">Directory</a>
+          <a href="add-listing.html">Add a listing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy-policy.html">Privacy policy</a>
+        </nav>
+        <p>Free verified directory of solar installers in Pakistan. Listing data checked 9 Nov 2026. Every listing is verified from a public source before it is published — always confirm a quote in writing before paying.</p>
+      </footer>
+    </div>
+  </body>
+</html>
