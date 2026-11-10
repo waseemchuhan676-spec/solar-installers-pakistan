@@ -1,4 +1,4 @@
+# TEMPORARY: site is live on Vercel for preview only. Do not index.
+# When solarinstallerspakistan.com is bought, restore Allow: / and the sitemap line.
 User-agent: *
-Allow: /
-
-Sitemap: https://solarinstallerspakistan.com/sitemap.xml
+Disallow: /
