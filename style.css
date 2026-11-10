@@ -63,7 +63,7 @@
       .stat span { font-size: .82rem; color: var(--ink-soft); }
 
       /* ---------- Search / filters ---------- */
-      .finder { position: sticky; top: 0; z-index: 20; background: var(--bg); padding: 18px 0 12px; border-bottom: 1px solid var(--line); margin-top: 26px; }
+      .finder { background: var(--bg); padding: 18px 0 12px; border-bottom: 1px solid var(--line); margin-top: 26px; }
       .searchrow { display: flex; gap: 10px; flex-wrap: wrap; }
       .searchrow input[type="search"] {
         flex: 1 1 260px; padding: 12px 16px; font: inherit; font-size: 1rem;
