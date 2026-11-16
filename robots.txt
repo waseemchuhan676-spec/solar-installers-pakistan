@@ -1,4 +1,5 @@
-# TEMPORARY: site is live on Vercel for preview only. Do not index.
-# When solarinstallerspakistan.com is bought, restore Allow: / and the sitemap line.
+# Site is live on Vercel (solar-installers-pakistan.vercel.app). Indexing allowed.
+# When the custom .com domain is bought, update canonicals/sitemap/og:url to it.
 User-agent: *
-Disallow: /
+Allow: /
+Sitemap: https://solar-installers-pakistan.vercel.app/sitemap.xml
